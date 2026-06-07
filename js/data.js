@@ -200,7 +200,6 @@ const KAYFLIX_DATA = {
       media: [
         'assets/photos/kavya w dad/kd0.jpeg',
         'assets/photos/kavya w dad/kd1.jpeg',
-        'assets/photos/kavya w dad/kd2.jpeg',
         'assets/photos/kavya w dad/kd3.jpeg',
         'assets/photos/kavya w dad/kd4.jpeg',
         'assets/photos/kavya w dad/kd5.jpeg'
@@ -238,11 +237,12 @@ const KAYFLIX_DATA = {
         'assets/photos/k5/k55.jpeg',
         'assets/photos/k5/k56.jpeg',
         'assets/photos/k5/k57.jpeg',
-        'assets/photos/k5/k58.jpeg',
         'assets/photos/k5/k59.jpeg',
         'assets/photos/k5/k510.jpeg',
         'assets/photos/k5/k511.jpeg',
-        'assets/photos/k5/k512.jpeg'      ],
+        'assets/photos/k5/k512.jpeg',
+        'assets/photos/k5/k513.jpeg', 
+      ],
       story: 'The years when childhood slowly became adventure. Little changes, big smiles, and the memories that show Kavya growing into herself.'
     },
     {
@@ -372,7 +372,7 @@ const KAYFLIX_DATA = {
         'assets/photos/DL/kdl4.jpg',
         'assets/photos/DL/kdl5.mp4',
       ],
-      story: 'Kavya’s first concert in London — Dua Lipa live. Lights, music, excitement, and one of those nights she will always remember.'
+      story: 'Kavya’s first concert in UK — Dua Lipa live. Lights, music, excitement, and one of those nights she will always remember.'
     },
 
     {
