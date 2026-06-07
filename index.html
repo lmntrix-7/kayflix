@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KayFlix | 24 Years of Kay</title>
+  <meta name="description" content="A birthday documentary website celebrating 24 years of Kay." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <section class="intro" id="intro">
+    <div class="intro-glow"></div>
+    <h1 class="intro-logo">KayFlix</h1>
+    <p class="intro-subtitle">A birthday special now streaming</p>
+    <div class="loading-bar"><span></span></div>
+  </section>
+
+  <header class="topbar">
+    <a class="brand" href="#home">KayFlix</a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#chapters">Seasons</a>
+      <a href="#memories">Memories</a>
+      <a href="#timeline">Timeline</a>
+    </nav>
+    <button class="music-btn" id="musicToggle" type="button">♪ Music</button>
+  </header>
+
+  <main id="home">
+    <section class="hero section-padding">
+      <div class="hero-copy">
+        <p class="eyebrow">KayFlix Original</p>
+        <h2>24 Years of Kay</h2>
+        <p class="hero-description">
+          A birthday story about her life, her favourite people, her funniest moments,
+          her biggest adventures, and every beautiful chapter still to come.
+        </p>
+        <div class="hero-actions">
+          <a href="#memories" class="btn primary">▶ Start Watching</a>
+          <a href="#timeline" class="btn secondary">View Timeline</a>
+        </div>
+      </div>
+      <div class="hero-poster">
+        <img src="assets/photos/hero-kay.jpeg" alt="KayFlix birthday poster" />
+        <div class="poster-badge">24th Birthday Special</div>
+      </div>
+    </section>
+
+    <section class="profile-section section-padding">
+      <p class="eyebrow center">Who's Watching?</p>
+      <div class="profile-card">
+        <img src="assets/photos/london holi.jpg" alt="Kay profile" />
+        <h3>Kay ❤️</h3>
+        <p>Main character since day one.</p>
+      </div>
+    </section>
+
+    <section class="continue section-padding">
+      <div class="section-title-row">
+        <div>
+          <p class="eyebrow">Continue Watching</p>
+          <h2>The Life of Kay</h2>
+        </div>
+        <span class="pill">Episode 24</span>
+      </div>
+      <div class="featured-memory" id="featuredMemory"></div>
+    </section>
+
+    <section class="chapters section-padding" id="chapters">
+      <div class="section-title-row">
+        <div>
+          <p class="eyebrow">Seasons</p>
+          <h2>Every Era Has a Story</h2>
+        </div>
+      </div>
+      <div class="chapter-grid" id="chapterGrid"></div>
+    </section>
+
+    <section class="memories section-padding" id="memories">
+      <div class="section-title-row">
+        <div>
+          <p class="eyebrow">Episodes</p>
+          <h2>Memory Library</h2>
+        </div>
+        <div class="filter-row" id="filterRow"></div>
+      </div>
+      <div class="memory-grid" id="memoryGrid"></div>
+    </section>
+
+    <section class="achievements section-padding">
+      <div class="section-title-row">
+        <div>
+          <p class="eyebrow">Achievements</p>
+          <h2>Unlocked by Kay</h2>
+        </div>
+      </div>
+      <div class="achievement-grid" id="achievementGrid"></div>
+    </section>
+
+    <section class="timeline-section section-padding" id="timeline">
+      <div class="section-title-row timeline-heading">
+        <div>
+          <p class="eyebrow">Finale</p>
+          <h2>Kay's Timeline</h2>
+          <p class="muted">
+            A cute horizontal snapshot of her memories. Add a year, month, or exact date to each memory,
+            and this timeline will arrange the story beautifully.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-shell">
+        <button class="timeline-nav" id="timelinePrev" type="button" aria-label="Previous timeline item">‹</button>
+        <div class="timeline-track-wrap" id="timelineTrackWrap">
+          <div class="timeline-line"></div>
+          <div class="timeline-track" id="timelineTrack"></div>
+        </div>
+        <button class="timeline-nav" id="timelineNext" type="button" aria-label="Next timeline item">›</button>
+      </div>
+    </section>
+
+    <section class="future section-padding">
+      <div class="future-card">
+        <p class="eyebrow">Still To Come</p>
+        <h2>The Best Chapters Haven't Happened Yet</h2>
+        <ul id="futureGoals"></ul>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="memoryModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="modal-card">
+      <button class="modal-close" type="button" data-close-modal>×</button>
+      <div class="modal-media" id="modalMedia"></div>
+      <div class="modal-body">
+        <p class="eyebrow" id="modalDate"></p>
+        <h2 id="modalTitle"></h2>
+        <p id="modalStory"></p>
+        <div class="carousel-controls">
+          <button id="prevMedia" type="button">‹</button>
+          <span id="mediaCount"></span>
+          <button id="nextMedia" type="button">›</button>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <audio id="bgMusic" loop src="assets/music/background.mp3"></audio>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
