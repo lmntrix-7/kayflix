@@ -361,7 +361,7 @@ const KAYFLIX_DATA = {
       id: 'dua-lipa-concert',
       category: 'adventures',
       title: 'Episode 20 — Dance The Night Away',
-      date: 'First Concert In London',
+      date: 'First Concert In UK',
       timelineDate: '2025-06-24',
       cover: 'assets/photos/DL/kdl0.jpeg',
       media: [
